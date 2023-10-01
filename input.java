@@ -19,5 +19,6 @@ public class input {
                 break;
             }
         }
+        scanner.close();
     }
 }
