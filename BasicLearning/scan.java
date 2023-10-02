@@ -1,3 +1,4 @@
+package BasicLearning;
 import java.util.Scanner;
 
 public class scan{

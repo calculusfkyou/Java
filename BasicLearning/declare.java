@@ -1,3 +1,4 @@
+package BasicLearning;
 public class declare{
     public static void main(String[] args){
         int i;

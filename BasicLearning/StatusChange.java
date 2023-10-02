@@ -1,3 +1,4 @@
+package BasicLearning;
 public class StatusChange {
     public static void main(String[] args) {
         // 容量：小 -> 大

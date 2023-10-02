@@ -1,3 +1,4 @@
+package BasicLearning;
 public class string {
     public static void main(String[] args){
         String x = "Hello";

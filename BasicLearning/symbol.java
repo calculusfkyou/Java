@@ -1,3 +1,4 @@
+package BasicLearning;
 public class symbol {
     public static void main(String[] args){
         int a = 10;
