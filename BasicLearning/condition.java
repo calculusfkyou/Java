@@ -31,5 +31,17 @@ public class condition {
             default :
                 System.out.println("資料異常！！！") ;
         }
+
+        int temp = 3;
+        switch (temp) {
+            case 4:
+                System.out.println("動力套件");
+            case 3:
+                System.out.println("天窗");
+            case 2:
+                System.out.println("DVD");
+            case 1:
+                System.out.println("自排 冷氣");
+        }
     }
 }
