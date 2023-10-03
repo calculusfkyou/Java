@@ -1,23 +1,24 @@
 package BasicLearning;
+
 public class string {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String x = "Hello";
         System.out.println(x);
         String y = "World!";
-        String z = x + " " +y;
+        String z = x + " " + y;
         System.out.println(z);
-        
+
         //用 printf, format 格式化輸出
         // %d ：格式化為整數
         // %f ：格式化為浮點數
         // %s ：格式化為字串
         String a = "Corgi";
-        System.out.printf("I love the %s\n",a);//不會自動換行
+        System.out.printf("I love the %s\n", a);//不會自動換行
 
-        int b=87;
-        String data=String.format("你是%d",b);
+        int b = 87;
+        String data = String.format("你是%d", b);
         System.out.println(data);
-        
+
         String name = "傻子";
         System.out.printf("你是%s，也是%d\n", name, b);
 
@@ -37,5 +38,13 @@ public class string {
         String str = "abc";
         StringBuilder re = new StringBuilder(str).reverse();
         System.out.println(re);
+
+        // 字串和整數的特性
+        String s1 = 123 + "abc";
+        String s2 = String.valueOf(3);
+        System.out.println(s1 + s2);
+        int c = 25;
+        String ss = "56";
+        System.out.println(c + ss);
     }
 }
