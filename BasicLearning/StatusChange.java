@@ -1,4 +1,5 @@
 package BasicLearning;
+
 public class StatusChange {
     public static void main(String[] args) {
         // 容量：小 -> 大
@@ -10,6 +11,10 @@ public class StatusChange {
         int c = 100;
         byte d = (byte) c;
         System.out.println(d);
+
+        // 強制轉型
+        double PI = 3.14;
+        System.out.println((int) PI);
 
         // 整數轉字串
         // Integer.toString()
