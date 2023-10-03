@@ -7,7 +7,17 @@ public class Goto {
             if(i == 3){
                 break;
             }
-            System.out.println(i);
+//            System.out.println(i);
+        }
+
+        // 標籤式 break
+        loop : for(int i=0;i<4;i++){
+            for(int j=0;j<4;j++){
+                if(i==2){
+                    break loop;
+                }
+//                System.out.println(i+j);
+            }
         }
 
         // continue
@@ -17,10 +27,21 @@ public class Goto {
             if(i == 3){
                 continue;
             }
-            System.out.println(i);
+//            System.out.println(i);
+        }
+
+        // 標籤式 continue
+        outerLoop:
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (i==1 || i==3) {
+                    continue outerLoop;
+                }
+                System.out.println(i);
+            }
         }
     }
-    
+
     //return
     //當程式執行到 return 跳轉語句，該區塊下方的程式將不會被執行，return 通常用在呼叫方法，當特定條間成立，返回原呼叫點。
     // public static void main(String[] args) {
