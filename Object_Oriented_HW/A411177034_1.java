@@ -1,4 +1,4 @@
-//UVA10041
+package Object_Oriented_HW;//UVA10041
 
 import java.util.Scanner;
 import java.util.Arrays;
