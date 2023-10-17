@@ -1,3 +1,6 @@
+// UVA105
+package Object_Oriented_HW;
+
 import java.util.Scanner;
 
 public class A411177034_3 { // 這個程式的主要功能是將測資存入陣列並且在每次輸入就更新一次給定範圍的最高高度，即為題目所述的skyline，最後印出所要求的格式 (高度有變化即會輸出一次索引值和高度)
