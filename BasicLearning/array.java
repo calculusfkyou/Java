@@ -1,8 +1,9 @@
 package BasicLearning;
+
 import java.util.Arrays;
 
 public class array {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 兩行定義方式：
         // 資料型態[] 陣列名稱;
         // 陣列名稱 = new 資料型態[陣列大小]; 
@@ -20,7 +21,7 @@ public class array {
         System.out.println(intArray[2]);
 
         // 陣列定義資料值
-        int[] intArray2 = { 10 , 20 , 99 };
+        int[] intArray2 = {10, 20, 99};
         System.out.println(intArray2[0]);
         System.out.println(intArray2[1]);
         System.out.println(intArray2[2]);
@@ -34,11 +35,11 @@ public class array {
 
         // 獲取陣列長度 .length
         // 字串則是用   .length()
-        int[] intArr = { 100 , 300 , 666};
+        int[] intArr = {100, 300, 666};
         System.out.println(intArr.length);
 
         // 陣列排序 Arrays.sort(arr)
-        int[] intArr2 = { 1000 , 1 , 10};
+        int[] intArr2 = {1000, 1, 10};
         System.out.println(Arrays.toString(intArr2));
         Arrays.sort(intArr2);
         System.out.println(Arrays.toString(intArr2));
@@ -64,26 +65,26 @@ public class array {
                 System.out.println("原始数组：" + Arrays.toString(arr));
             }
         }*/
-        
+
         // 常用函式：
         // fill ： 填滿陣列元素
 
         // equals ： 比較兩個陣列元素是否相同
         // Arrays.equals(arr1,arr2)
-        int[] arr1 = { 1 , 2 , 3};
-        int[] arr2 = { 2 , 1 , 3};
-        int[] arr3 = { 1 , 2 , 3};
-        System.out.println(Arrays.equals(arr1,arr2));
-        System.out.println(Arrays.equals(arr1,arr3));
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {2, 1, 3};
+        int[] arr3 = {1, 2, 3};
+        System.out.println(Arrays.equals(arr1, arr2));
+        System.out.println(Arrays.equals(arr1, arr3));
 
         // binarySearch ： 搜尋陣列元素 (index值)
         // Arrays.binarySearch(arr,value)
-        System.out.println(Arrays.binarySearch(arr1,2));
+        System.out.println(Arrays.binarySearch(arr1, 2));
 
         // sort : 排序
-        int[] nums = {2,1,3};
+        int[] nums = {2, 1, 3};
         Arrays.sort(nums);
-        for(int i : nums){
+        for (int i : nums) {
             System.out.println(i);
         }
 
@@ -91,14 +92,35 @@ public class array {
         // 二維陣列 2*2 宣告方式：
         int[][] aArray = new int[2][2];
         // 事後定義資料值
-        aArray[0][0] = 300; 
+        aArray[0][0] = 300;
         aArray[0][1] = 20;
         aArray[1][0] = 100;
-        aArray[1][1] = 20;  
+        aArray[1][1] = 20;
 
         // 陣列定義時初始資料值
-        int[][] bArray = { {300,20} , {100,20} };
-        System.out.println(bArray[0][1]); 
+        int[][] bArray = {{300, 20}, {100, 20}};
+        System.out.println(bArray[0][1]);
         // 多維陣列宣告依此類推
+
+        // 找最大最小
+        int[][] arr = {{2, 1, 3},
+                {5},
+                {6, 4, 8, 7}};
+
+        for (int i = 0; i < arr.length; i++) {
+            int minValue = arr[i][0];
+            int maxValue = arr[i][0];
+
+            for (int j = 0; j < arr[i].length; j++) {
+
+                if (arr[i][j] < minValue)
+                    minValue = arr[i][j];
+
+                if (arr[i][j] > maxValue)
+                    maxValue = arr[i][j];
+
+            }
+            System.out.println(minValue + " " + maxValue);
+        }
     }
 }
