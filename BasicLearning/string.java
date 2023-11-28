@@ -46,5 +46,15 @@ public class string {
         int c = 25;
         String ss = "56";
         System.out.println(c + ss);
+
+        // str1和str2指向字符串池中的相同對象，而str3指向堆內存中的新對象。
+        String str1 = "abc";
+        String str2 = "abc";
+        String str3 = new String("abc");//創建一個新的字符串對象，並將其存儲在堆內存中。str3引用這個新創建的對象。
+        System.out.println(str1==str2);
+        System.out.println(str1==str3);
+        System.out.println(str1.equals(str2));
+        System.out.println(str1.equals(str3));
+        // 使用==運算符來比較str1和str2時，它們引用的是相同的字符串對象，因此比較結果是true。但當比較str1和str3時，它們引用不同的對象，因此比較結果是false。
     }
 }

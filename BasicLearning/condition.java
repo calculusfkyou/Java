@@ -7,7 +7,7 @@ public class condition {
         //switch...case
         //以上四種判斷式語法都和C++一樣
 
-        int intScore = 5;
+        int intScore = 4;
         switch(intScore)
         {
             case 5:

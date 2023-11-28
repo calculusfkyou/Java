@@ -1,3 +1,5 @@
+package Object_Oriented_HW;
+
 import java.util.Scanner;
 
 public class A411177034_8 { // 這個程式的主要功能是遞迴實現merge sort並計算交換次數，主要通過拆分陣列、遞迴排序左右兩部分以及合併排序的過程來完成排序並計算交換次數。
@@ -55,7 +57,7 @@ public class A411177034_8 { // 這個程式的主要功能是遞迴實現merge s
 
             if (leftArray[i] <= rightArray[j]) { // 如果左邊的元素小於或等於右邊的元素，就將左邊的元素放入原陣列中，並將左陣列的索引 i 和原陣列的索引 k 同時增加 1
                 array[k++] = leftArray[i++];
-            } else { // 如果左邊的元素大於右邊的元素，將右邊的元素放入原陣列，同時將右陣列的索引 j 和原陣列的索引 k 同時增加 1，交換次數加一
+            } else { // 如果左邊的元素大於右邊的元素，將右邊的元素放入原陣列，同時將右陣列的索引 j 和原陣列的索引 k 同時增加 1，交換次數增加
                 array[k++] = rightArray[j++];
                 count += leftArray.length - i; // 統計交換次數
             }
