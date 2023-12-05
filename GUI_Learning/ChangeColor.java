@@ -1,3 +1,5 @@
+package GUI_Learning;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -11,7 +13,7 @@ public class ChangeColor extends JPanel
   JButton blue = new JButton("藍");
 
   public static void main(String[] args) {
-    // 建立 ChangeColor (JPanel 的子類別) 物件
+    // 建立 GUI.ChangeColor (JPanel 的子類別) 物件
     ChangeColor p = new ChangeColor();
 
     // 將 JPanel 物件加到 JFrame 中

@@ -1,3 +1,5 @@
+package GUI_Learning;
+
 import javax.swing.*;
 import java.awt.event.*;  // 要處理事件必須 import 此套件
 
