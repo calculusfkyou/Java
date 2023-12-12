@@ -1,3 +1,5 @@
+package Object_Oriented_HW;
+
 import java.util.*;
 
 public class A411177034_11 { // 這個程式的主要功能是輸入學生的交換信息後，將原本的位置和想去的位置分開儲存並排序，再判斷兩陣列內容是否相同，輸出對應所求
